@@ -2,9 +2,12 @@ package EVM;
 
 public class On implements ControlState{
 
-	@Override
-	public void action() {
+	public void action(ControlUnit c) {
 		// TODO Auto-generated method stub
+		Busy busy = new Busy();
+		c.setState(busy);
+		c.setStatus("Busy!!");
+		
 		
 	}
 

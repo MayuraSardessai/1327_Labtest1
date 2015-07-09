@@ -1,5 +1,5 @@
 package EVM;
 
 public interface ControlState {
-	void action();
+	void action(ControlUnit c);
 }

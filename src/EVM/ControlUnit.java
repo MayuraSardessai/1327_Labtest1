@@ -5,6 +5,7 @@ public class ControlUnit {
 	BallotUnit ballot = new BallotUnit();
 	int i;
 	int total=0;
+	String status;
 	private ControlState cState;
 
 	
@@ -51,5 +52,15 @@ public class ControlUnit {
 	 public ControlState getState(){
 		 return cState;
    }
+
+	public void setStatus(String status) {
+		// TODO Auto-generated method stub
+		this.status = status;
+		
+	}
+
+	public String getStatus() {
+		return status;
+	}
 	
 }
