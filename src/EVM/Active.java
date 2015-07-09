@@ -1,5 +1,14 @@
 package EVM;
 
-public class Active implements State{
+public class Active implements BallotState{
+
+	@Override
+	public void action(BallotUnit b) {
+		// TODO Auto-generated method stub
+		Inactive inact = new Inactive();
+		b.setState(inact);
+		b.setStatus("Inactive!!");
+		
+	}
 
 }

@@ -5,10 +5,12 @@ public class ControlUnit {
 	BallotUnit ballot = new BallotUnit();
 	int i;
 	int total=0;
+	private ControlState cState;
+
 	
 	ControlUnit()
 	{
-		
+	   cState = null;
 	}
 	
 	int getTotalNumberOfVotes()
@@ -40,4 +42,14 @@ public class ControlUnit {
 			c[i].setCount(0);
 		}
 	}
+	
+
+	 public void setState(ControlState cState){
+	    this.cState = cState;		
+	 }
+
+	 public ControlState getState(){
+		 return cState;
+   }
+	
 }
