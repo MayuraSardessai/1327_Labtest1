@@ -1,6 +1,6 @@
 package EVM;
 
-public class ControlUnitButton implements Button{
+public class BallotButton implements Button{
 
 	@Override
 	public void pressButton() {

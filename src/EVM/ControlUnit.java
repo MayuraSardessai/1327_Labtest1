@@ -6,12 +6,22 @@ public class ControlUnit {
 	int i;
 	int total=0;
 	String status;
+	
 	private ControlState cState;
 
 	
 	ControlUnit()
 	{
 	   cState = null;
+	   
+	}
+	
+	void registerCandidate()
+	{
+		 for(i=0;i<5;i++)
+		   {
+			   c[i] = new Candidate("Candidate"+i,0);
+		   }
 	}
 	
 	int getTotalNumberOfVotes()
