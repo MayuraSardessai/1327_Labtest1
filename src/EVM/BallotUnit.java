@@ -2,6 +2,8 @@ package EVM;
 
 public class BallotUnit {
 	private BallotState state;
+	CandidateButton candButton[] = new CandidateButton[5];
+	
 	String status;
 
 	   public BallotUnit(){

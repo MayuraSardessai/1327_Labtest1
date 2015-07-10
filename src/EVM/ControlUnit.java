@@ -3,6 +3,10 @@ package EVM;
 public class ControlUnit {
 	Candidate c[] = new Candidate[5];
 	BallotUnit ballot = new BallotUnit();
+	Button totalButton;
+	Button resetButton;
+	Button ballotButton;
+	
 	int i;
 	int total=0;
 	String status;
@@ -71,6 +75,11 @@ public class ControlUnit {
 
 	public String getStatus() {
 		return status;
+	}
+	
+	void changeBallotState()
+	{
+		ballotButton.pressButton();
 	}
 	
 }
